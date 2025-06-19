@@ -8,7 +8,7 @@ export default function MyOrder() {
 
   const fetchMyOrder = async () => {
     try {
-      const response = await fetchWithAuth('http://localhost:3000/api/myorderData', 'POST', {
+      const response = await fetchWithAuth('https://foodapp-backend-65ev.onrender.com/api/myorderData', 'POST', {
         email: localStorage.getItem('UserEmail')  // Or use 'email' based on how you store it
       });
 

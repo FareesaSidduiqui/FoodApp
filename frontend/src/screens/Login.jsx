@@ -26,7 +26,7 @@ export default function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/loginuser",
+        "https://foodapp-backend-65ev.onrender.com/api/loginuser",
         LoginformData,
         { withCredentials : true }
       );

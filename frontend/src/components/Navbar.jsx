@@ -13,7 +13,7 @@ export default function Navbar() {
   const isLoggedIn = !!localStorage.getItem("accessToken");
 
   const handleLogout = async () => {
-    await axios.post("http://localhost:3000/api/logout", {}, { withCredentials: true });
+    await axios.post("https://foodapp-backend-65ev.onrender.com/api/logout", {}, { withCredentials: true });
     localStorage.removeItem('accessToken');
     navigate("/");
   };

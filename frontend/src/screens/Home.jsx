@@ -27,7 +27,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.post("http://localhost:3000/api/foodData");
+        const res = await axios.post("https://foodapp-backend-65ev.onrender.com/api/foodData");
         // setData(res.data);
         console.log("thi is respone from foodData", res.data);
         setFoodItem(res.data[0]);

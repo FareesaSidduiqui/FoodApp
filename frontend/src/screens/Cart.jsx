@@ -26,7 +26,7 @@ export default function Cart() {
         order_date: new Date().toDateString()
       };
 
-      const response = await fetchWithAuth('http://localhost:3000/api/orderData', 'POST', bodyData);
+      const response = await fetchWithAuth('https://foodapp-backend-65ev.onrender.com/api/orderData', 'POST', bodyData);
 
       if (response.status === 200) {
         dispatch({ type: "DROP" });
