@@ -45,7 +45,7 @@ app.get('/',async(req,res)=>{
 app.use(express.json())
 app.set("trust proxy", 1); // trust first proxy (Render uses a reverse proxy)
 app.use(cors({
-    origin : 'http://localhost:5173',
+    origin : 'https://foodapp-ua89.onrender.com',
     credentials:true,
 }))
 app.use(cookieParser())
