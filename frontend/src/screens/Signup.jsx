@@ -27,7 +27,7 @@ export default function Signup() {
     setErrorMessages([]); // Clear previous errors before submitting
 
     try {
-      const response = await axios.post('http://localhost:3000/api/createuser', formData,
+      const response = await axios.post('https://foodapp-backend-65ev.onrender.com/api/createuser', formData,
         {withCredentials:true}
       );
       console.log("User created:", response.data);
