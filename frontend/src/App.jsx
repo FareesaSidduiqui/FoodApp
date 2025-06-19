@@ -18,7 +18,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Navbar from './components/Navbar.jsx'
-import Signup from './screens/signup.jsx'
+import Signup from './screens/Signup.jsx'
 import NotFound from './screens/NotFound.jsx'
 
 const isLoggedIn = !!localStorage.getItem("accessToken");
